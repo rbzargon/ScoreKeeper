@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="change_directions">Change\nDirections</string>
+    <string name="reset">Reset</string>
+    <string name="teamOne">Team One</string>
+    <string name="teamTwo">Team Two</string>
+    <string name="teamOneScore">0</string>
+    <string name="teamTwoScore">0</string>g>
+    <string name="firstScore">+6</string>
+    <string name="secondScore">+3</string>
+    <string name="thirdScore">+2</string>
+    <string name="fourthScore">+1</string>
+</resources>

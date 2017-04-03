@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFDBC5"
+    android:fillViewport="true">
+
+    <!--focus changed to this element to prevent EditText from focusing
+    http://stackoverflow.com/questions/1555109/stop-edittext-from-gaining-focus-at-activity-startup/9681809#9681809
+    -Silver, Andre Oriani, Guillaume Perot -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.scorekeeper.MainActivity"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/teamOneName"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/teamOne"
+                android:textAlignment="center" />
+    
+            <EditText
+                android:id="@+id/teamTwoName"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/teamTwo"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/teamOneScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/teamOneScore"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/teamTwoScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="@string/teamTwoScore" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/firstScore1"
+            android:onClick="incrementScore"
+            android:tag="@string/firstScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/firstScore" />
+
+        <Button
+            android:id="@+id/firstScore2"
+            android:onClick="incrementScore"
+            android:tag="26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/firstScore" />
+        </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/secondScore1"
+            android:onClick="incrementScore"
+            android:tag="13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/secondScore" />
+
+        <Button
+            android:id="@+id/secondScore2"
+            android:onClick="incrementScore"
+            android:tag="23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/secondScore" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/thirdScore1"
+            android:onClick="incrementScore"
+            android:tag="12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/thirdScore" />
+
+        <Button
+            android:id="@+id/thirdScore2"
+            android:onClick="incrementScore"
+            android:tag="22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/thirdScore" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/fourthScore1"
+            android:onClick="incrementScore"
+            android:tag="11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/fourthScore" />
+
+        <Button
+            android:id="@+id/fourthScore2"
+            android:onClick="incrementScore"
+            android:tag="21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/fourthScore" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/change_directions"
+            android:onClick="changeDirections"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="15dp"
+            android:textSize="24sp"
+            android:text="@string/change_directions" />
+
+        <Button
+            android:id="@+id/reset"
+            android:onClick="reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="24sp"
+            android:text="@string/reset" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
